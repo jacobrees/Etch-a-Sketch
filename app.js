@@ -1,4 +1,4 @@
-const etchBoard = document.querySelector('.etch-board');
+let etchBoard = document.querySelector('.etch-board');
 const boardSize = 16 * 16;
 let etchDiv = '';
 
@@ -7,7 +7,7 @@ for (let i = 0; i < boardSize; i += 1) {
 }
 etchBoard.innerHTML = etchDiv;
 
-const etchSquare = document.querySelectorAll('.etch-square');
+let etchSquare = document.querySelectorAll('.etch-square');
 etchSquare.forEach((square) => {
   square.style.width = `${550 / 16 - 2}px`;
   square.style.height = `${550 / 16 - 2}px`;
@@ -64,6 +64,30 @@ rgbBtn.addEventListener('click', () => {
   etchSquare.forEach((square) => {
     square.addEventListener('mouseover', () => {
       square.style.backgroundColor = randomColor();
+    });
+  });
+});
+
+const boardSelect = document.querySelector('.board-size');
+
+boardSelect.addEventListener('change', (e) => {
+  etchBoard = document.querySelector('.etch-board');
+  etchBoard.innerHTML = '';
+  etchDiv = '';
+  const newBoardSize = e.target.value * e.target.value;
+  const newSquareSize = `${550 / e.target.value - 2}px`;
+  for (let i = 0; i < newBoardSize; i += 1) {
+    etchDiv += '<div class="etch-square"></div>';
+  }
+  etchBoard.innerHTML = etchDiv;
+  etchSquare = document.querySelectorAll('.etch-square');
+  etchSquare.forEach((square) => {
+    square.style.width = newSquareSize;
+    square.style.height = newSquareSize;
+  });
+  etchSquare.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'black';
     });
   });
 });
