@@ -18,3 +18,11 @@ etchSquare.forEach((square) => {
     square.style.backgroundColor = 'black';
   });
 });
+
+const resetBtn = document.querySelector('.reset-btn')
+
+resetBtn.addEventListener('click', function(){
+    etchSquare.forEach(function(square){
+        square.style.backgroundColor = 'white'
+    })
+})
