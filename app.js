@@ -12,3 +12,9 @@ etchSquare.forEach((square) => {
   square.style.width = `${550 / 16 - 2}px`;
   square.style.height = `${550 / 16 - 2}px`;
 });
+
+etchSquare.forEach((square) => {
+  square.addEventListener('mouseover', () => {
+    square.style.backgroundColor = 'black';
+  });
+});
