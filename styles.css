@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:wght@700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: yellow;
+}
+
+.logo {
+  font-family: 'Fugaz One', cursive;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.etch-container {
+  background-color: red;
+  width: 600px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.etch-board {
+  width: 550px;
+  height: 550px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5px solid black;
+}
+
+.etch-square {
+  border: 1px solid rgb(0, 0, 0);
+  float: left;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: yellow;
+  border: 3px solid orange;
+  width: 90px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.btns-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.board-size {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background-color: yellow;
+  border: 3px solid orange;
+  width: 90px;
+  height: 60px;
+  border-radius: 25px;
+}
