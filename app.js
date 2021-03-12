@@ -52,18 +52,18 @@ eraserBtn.addEventListener('click', () => {
 
 const rgbBtn = document.querySelector('.rgb-btn');
 
-function randomColor(){
-    const r = Math.floor((Math.random() * 250))
-    const g = Math.floor((Math.random() * 250))
-    const b = Math.floor((Math.random() * 250))
+function randomColor() {
+  const r = Math.floor((Math.random() * 250));
+  const g = Math.floor((Math.random() * 250));
+  const b = Math.floor((Math.random() * 250));
 
-    return `rgb(${r}, ${g}, ${b})`
+  return `rgb(${r}, ${g}, ${b})`;
 }
 
 rgbBtn.addEventListener('click', () => {
-    etchSquare.forEach((square) => {
-      square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = randomColor();
-      });
+  etchSquare.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = randomColor();
     });
   });
+});
