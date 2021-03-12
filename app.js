@@ -11,7 +11,4 @@ const etchSquare = document.querySelectorAll('.etch-square');
 etchSquare.forEach((square) => {
   square.style.width = `${550 / 16 - 2}px`;
   square.style.height = `${550 / 16 - 2}px`;
-})
-
-  .style.width = `${550 / 16}px`;
-etchSquare.style.height = `${550 / 16}px`;
+});
