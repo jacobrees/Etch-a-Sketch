@@ -19,10 +19,33 @@ etchSquare.forEach((square) => {
   });
 });
 
-const resetBtn = document.querySelector('.reset-btn')
+const resetBtn = document.querySelector('.reset-btn');
 
-resetBtn.addEventListener('click', function(){
-    etchSquare.forEach(function(square){
-        square.style.backgroundColor = 'white'
-    })
-})
+resetBtn.addEventListener('click', () => {
+  etchSquare.forEach((square) => {
+    square.style.backgroundColor = 'white';
+    square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'black';
+    });
+  });
+});
+
+const penBtn = document.querySelector('.pen-btn');
+
+penBtn.addEventListener('click', () => {
+  etchSquare.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'black';
+    });
+  });
+});
+
+const eraserBtn = document.querySelector('.eraser-btn');
+
+eraserBtn.addEventListener('click', () => {
+  etchSquare.forEach((square) => {
+    square.addEventListener('mouseover', () => {
+      square.style.backgroundColor = 'white';
+    });
+  });
+});
