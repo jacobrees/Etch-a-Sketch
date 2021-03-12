@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: yellow;
 }
 
 .logo {
@@ -9,4 +10,27 @@ body {
   font-size: 40px;
   text-align: center;
   padding-top: 40px;
+}
+
+.etch-container {
+  background-color: red;
+  width: 600px;
+  height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.etch-board {
+  width: 550px;
+  height: 550px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btns-container {
+  width: 100%;
+  height: 80px;
 }
